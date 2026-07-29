@@ -209,21 +209,21 @@ public class Signup3 extends JFrame implements ActionListener {
         String fac = "";
         if(c1.isSelected()){
             fac = fac+"ATM CARD ";
-        } else if (c2.isSelected()) {
+        }  if (c2.isSelected()) {
             fac = fac+"Internet Banking";
-        } else if (c3.isSelected()) {
+        }  if (c3.isSelected()) {
             fac = fac+"Mobile Banking";
-        } else if (c4.isSelected()) {
+        }  if (c4.isSelected()) {
             fac = fac+"EMAIL Alerts";
-        } else if (c5.isSelected()) {
+        }  if (c5.isSelected()) {
             fac=fac+"Cheque Book";
-        } else if (c6.isSelected()) {
+        } if (c6.isSelected()) {
             fac=fac+"E-Statement";
         }
 
         try {
             if (e.getSource()==s){
-                if (atype.equals("")){
+                if (atype == null){
                     JOptionPane.showMessageDialog(null,"Fill all the fields");
                 }else {
                     Connn c1 = new Connn();
@@ -235,7 +235,7 @@ public class Signup3 extends JFrame implements ActionListener {
                     new Deposit(pin);
                     setVisible(false);
                 }
-            } else if (e.getSource()==c) {
+            }  if (e.getSource()==c) {
                 System.exit(0);
             }
 
