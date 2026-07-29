@@ -130,6 +130,9 @@ public class Signup2 extends JFrame implements ActionListener {
         r2.setBackground(new Color(76,252,190));
         r2.setBounds(460,490,100,30);
         add(r2);
+        ButtonGroup bg1 = new ButtonGroup();
+        bg1.add(r1);
+        bg1.add(r2);
 
         JLabel l11 = new JLabel("Existing Account : ");
         l11.setFont(new Font("Raleway", Font.BOLD,18));
@@ -146,6 +149,9 @@ public class Signup2 extends JFrame implements ActionListener {
         e2.setBackground(new Color(76,252,190));
         e2.setBounds(460,540,100,30);
         add(e2);
+        ButtonGroup bg2 = new ButtonGroup();
+        bg2.add(e1);
+        bg2.add(e2);
 
         JLabel l12 = new JLabel("Form No : ");
         l12.setFont(new Font("Raleway", Font.BOLD,14));
@@ -191,9 +197,9 @@ public class Signup2 extends JFrame implements ActionListener {
             scitizen ="No";
         }
         String eAccount = " ";
-        if ((r1.isSelected())){
+        if ((e1.isSelected())){
             eAccount = "Yes";
-        } else if (r2.isSelected()) {
+        } else if (e2.isSelected()) {
             eAccount ="No";
         }
 
