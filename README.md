@@ -1,11 +1,15 @@
 # Bank Management System
 
-A desktop-based Bank Management System developed using Java Swing and MySQL. The application enables users to create bank accounts, authenticate securely, and perform various banking operations through an intuitive graphical user interface.
+A desktop-based **Bank Management System** developed using **Java Swing, AWT, JDBC, and MySQL**. This application provides a secure and user-friendly banking interface where users can create accounts, log in, and perform essential banking operations.
+
+## GitHub Repository
+
+https://github.com/pratisthakesarwani088-ui/Bank-Management-System
 
 ## Features
 
 - User Registration
-- User Authentication (Login)
+- Secure User Login
 - Deposit Money
 - Withdraw Money
 - Fast Cash Withdrawal
@@ -13,37 +17,38 @@ A desktop-based Bank Management System developed using Java Swing and MySQL. The
 - Mini Statement
 - ATM PIN Change
 - MySQL Database Integration
+- User-Friendly Graphical Interface
 
 ## Technologies Used
 
 - Java
-- Java Swing
+- Swing
 - AWT
 - JDBC
 - MySQL
 
+## Project Structure
+
+- `Login.java` – User Login
+- `Signup.java` – User Registration
+- `Signup2.java` – Additional User Details
+- `Signup3.java` – Account Type Selection & ATM Card Generation
+- `main_Class.java` – Main Dashboard
+- `Deposit.java` – Deposit Money
+- `Withdrawl.java` – Withdraw Money
+- `FastCash.java` – Fast Cash Transactions
+- `BalanceEnquriy.java` – Balance Enquiry
+- `mini.java` – Mini Statement
+- `Pin.java` – ATM PIN Change
+- `Connn.java` – MySQL Database Connection
+
 ## Requirements
 
-- JDK 8 or above
+- JDK 8 or Above
 - IntelliJ IDEA / Eclipse
 - MySQL Server
 
-## Project Structure
-
-- `Login.java` – User login
-- `Signup.java` – User registration
-- `Signup2.java` – Additional user details
-- `Signup3.java` – Account type selection and ATM card generation
-- `main_Class.java` – Main dashboard
-- `Deposit.java` – Deposit transactions
-- `Withdrawl.java` – Withdrawal transactions
-- `FastCash.java` – Quick cash withdrawal
-- `BalanceEnquriy.java` – Balance enquiry
-- `mini.java` – Mini statement
-- `Pin.java` – ATM PIN update
-- `Connn.java` – MySQL database connection
-
-## Database
+## Database Setup
 
 Create a MySQL database named:
 
@@ -51,14 +56,22 @@ Create a MySQL database named:
 banksystem
 ```
 
-Import the required tables and update the database credentials in `Connn.java`.
+Update the MySQL username and password in `Connn.java` before running the application.
 
 ## How to Run
 
-1. Clone or download the repository.
+1. Clone the repository:
+
+```bash
+git clone https://github.com/pratisthakesarwani088-ui/Bank-Management-System.git
+```
+
 2. Open the project in IntelliJ IDEA or Eclipse.
-3. Create the `banksystem` database in MySQL.
-4. Configure the database username and password in `Connn.java`.
+
+3. Create the **banksystem** database in MySQL.
+
+4. Configure the database credentials in `Connn.java`.
+
 5. Run `Login.java`.
 
 ## Future Improvements
